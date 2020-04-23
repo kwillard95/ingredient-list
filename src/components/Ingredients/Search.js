@@ -5,7 +5,7 @@ import "./Search.css";
 
 const Search = React.memo((props) => {
   const { onLoadIngredients } = props;
-  const [enteredFilter, setEnteredFilter] = useState([]);
+  const [enteredFilter, setEnteredFilter] = useState("");
   const inputRef = useRef();
 
   useEffect(() => {
